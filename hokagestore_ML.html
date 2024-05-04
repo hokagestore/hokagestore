@@ -11,6 +11,7 @@
 	<body>
 		<style>
 			body{
+				font-family: 'Trebuchet MS', sans-serif;
 				color: #ffffff;
 				margin-top: 50px;
 				background-color: #3c3c3c;
@@ -43,12 +44,26 @@
 			.name {
 				margin-left: 10px;
 				font-size: 25px;
-				font-weight: bold;
+				font-weight: 900;
 				margin-right: 5px;
 			}
 			.search{
 				margin-right: 10px;
 			 	max-length: 25px;
+			}
+			.stepform {
+				font-color: #282828;
+				background-color: #ffffff;
+			}
+			.topup{
+				margin-top: 70px;
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+			}
+			.example{
+				max-width: 360px;
+				max-height: 300px;
 			}
 			.footer {
 				background-color: #282828;
@@ -64,10 +79,19 @@
   				overflow:hidden;
 			}
 			.uid {
-				width: 100px;
+				font-size:30px;
+				text-align: center;
+				width: 210px;
+				height:50px;
 			}
 			.sid {
-				width: 50px;
+				font-size:30px;
+				text-align: center;
+				width: 100px;
+				height:50px;
+			}
+			.info {
+				text-align: justify;
 			}
 			.item {
 				color: #000000;
@@ -89,21 +113,21 @@
 				<p1 class="name" type="name">HOKAGESTORE</p1>
 				<img align="right" class="search" src="asset/mag.png">
 		</header>
-		<button class="back" onclick="location.href='https://hokagestore.github.io/hokagestore/';">←</button>
 		<div>
-			<p>TOPUP MOBILE LEGENDS</p>
+			<h1 class="topup">TOPUP MOBILE LEGENDS: BANG BANG</h1>
 			
 			<form>
-				<div class="inine">
+
 					<label for="uid"> 
-						masukkan user ID: 
-						<input class="uid" type="number" id="uid" name="uid" placeholder="user ID" required>
-						<input class="sid" type="number" id="sid" name="sid" placeholder="(0123)" required>
+						<h2> Masukkan User ID: </h2>
+						<input class="inline uid" type="number" id="uid" name="uid" placeholder="0123456789" required>
+						<input class="inline sid" type="number" id="sid" name="sid" placeholder="0123" required>
+						<h3 class="info">User ID berguna untuk identifikasi akun tujuan topup. Silakan masukkan User ID Anda dengan benar agar proses transaksi berjalan lancar.</h3>
+						<h4> contoh: </h4>
+						<img class="example" src="asset/ex_UID.png"/>
 					</label>
-				</div>
 
-				<div class="inline"> contoh: <img src="asset/ex_UID.png"/>	</div>
-
+				
 				<div class="inline">
 					<label for="nn">
 						masukkan Nickname:
@@ -163,6 +187,9 @@
 				var link = location.href="https://wa.me/6285692979765/?text=%F0%9F%92%8E%20*TOPUP%20MOBILE%20LEGENDS*%20%F0%9F%92%8E%0A%0AUser ID:"+Iuid+"%0AServer ID:"+Isid+"%0ANickname:"+Inn+"%0APilihan Order:"+ Iorder+"%0APilihan metode pembayaran:"+ Ipayment
 				console.log(link)
 			}
+		</script>
+	</body>
+</html>
 		</script>
 	</body>
 </html>
