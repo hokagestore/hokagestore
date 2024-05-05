@@ -29,6 +29,25 @@
  				text-overflow:ellipsis;
   				overflow:hidden;
   			}
+  			.bgform{
+				border-radius:10px;
+				color: #3c3c3c;
+				background-color: #ffffff;
+			}
+			.mg15{
+				margin-left:15px;
+				margin-right: 15px;
+				margin-bottom: 10px;
+			}
+			.mgt15{
+				margin-top: 15px;
+			}
+			.minmg1{
+				margin-bottom: -1px;
+			}
+			.inline {
+				display: inline-block;
+			}
   			.menu {
   				margin-left: 10px;
   				width: 25px;
@@ -51,106 +70,131 @@
 				margin-right: 10px;
 			 	max-length: 25px;
 			}
-			.stepform {
-				font-color: #282828;
-				background-color: #ffffff;
-			}
-			.topup{
+			h1{
 				margin-top: 70px;
-				font-size: 20px;
+				font-size: 28px;
 				font-weight: bold;
 				text-align: center;
 			}
-			.example{
-				max-width: 360px;
-				max-height: 300px;
+			.uh1{
+				font-size: 28px;
+				font-weight: bold;
+				text-align: center;
 			}
-			.footer {
-				background-color: #282828;
-				position: ;
- 			 	top: 0;    
-  				left:0;
-  				right:0;
-  				margin:0 auto;
-  				width: 100%;
- 				height: 50px;
-  				border: none;
- 				text-overflow:ellipsis;
-  				overflow:hidden;
+			h2{
+				margin-left:15px;
+				margin-right: 15px;
+				text-align: justify;
+				font-size: 20px;
+			}
+			h3 {
+				color: dimgray;
+				margin-left:15px;
+				margin-right: 15px;
+				height: 30px;
+				text-align: justify;
+				font-size: 10px;
 			}
 			.uid {
 				font-size:30px;
 				text-align: center;
-				width: 210px;
+				width: 180px;
 				height:50px;
 			}
 			.sid {
 				font-size:30px;
 				text-align: center;
-				width: 100px;
+				width: 90px;
 				height:50px;
 			}
-			.info {
-				text-align: justify;
+			.nn{
+				font-size:30px;
+				text-align: center;
+				width:300px;
+				height:50px;
 			}
-			.item {
-				color: #000000;
+			.button {
+				border-radius:10px;
+				color: #3c3c3c;
 				background-color: #ffffff;
-				margin: 10px;
-				list-style-type: none;
+ 				border: none;
+ 				padding: 15px 32px;
+ 				text-align: center;
+ 				text-decoration: none;
+ 				display: inline-block;
+  				font-size: 16px;
+  				font-weight: bolder;
 			}
-			.downline {
-				display: block;
+			.ig{
+				height:50px;
 			}
-			.inline {
-				display: inline-block;
-			}
-
 		</style>
 		<header class="header" type="header">
-				<button class="menu" type="menu">≡</button>
 				<img class="logo" type="logo" src="asset/logo.png"> 
-				<p1 class="name" type="name">HOKAGESTORE</p1>
-				<img align="right" class="search" src="asset/mag.png">
+				<p1 class="name" type="name">HOKAGESTORE INDONESIA</p1>
 		</header>
 		<div>
-			<h1 class="topup">TOPUP MOBILE LEGENDS: BANG BANG</h1>
+			<h1>TOPUP MOBILE LEGENDS: BANG BANG</h1>
 			
 			<form>
 
+					<div class="bgform">
 					<label for="uid"> 
-						<h2> Masukkan User ID: </h2>
-						<input class="inline uid" type="number" id="uid" name="uid" placeholder="0123456789" required>
+						<h2 class="minmg1">① Masukkan User ID: </h2>
+						<input class="mg15 inline uid" type="number" id="uid" name="uid" placeholder="0123456789" required>
 						<input class="inline sid" type="number" id="sid" name="sid" placeholder="0123" required>
-						<h3 class="info">User ID berguna untuk identifikasi akun tujuan topup. Silakan masukkan User ID Anda dengan benar agar proses transaksi berjalan lancar.</h3>
-						<h4> contoh: </h4>
-						<img class="example" src="asset/ex_UID.png"/>
+						<h3>Cek User ID di menu profile pada game. User ID akan terlihat di bagian bawah nama karakter game Anda. <a href="asset/ex_UID.png">contoh. </a></h3>
 					</label>
-
-				
-				<div class="inline">
+					</div>
+					
+				<div class="bgform">
 					<label for="nn">
-						masukkan Nickname:
-						<input class="nn" type="text" id="nn" name="nn" placeholder="Jono*831" required>
+						<h2 class="minmg1">② Masukkan Nickname:</h2>
+						<input class="mg15 nn" type="text" id="nn" name="nn" placeholder="Jono*831" required>
 					</label>
 				</div>
 
-				<div class="inline">
+				<div class="bgform">
 					<label for="order">
-					pilih jumlah diamond:
-					<select id="order">
-						<option value="ML5_S1">5 Diamond</option>
-						<option value="ML12_S1">12 Diamond</option>
+					<h2 class="minmg1">③ Pilih Item yang Mau Diorder:</h2>
+					<select class="mg15" id="order">
+						<option> </option>
+						<option value="WDP_S1">Weekly Diamond Pass ML 1x (Rp. 30.000)</option>
+						<option value="WDP2_S1">Weekly Diamond Pass ML 2x (Rp. 59.500</option>
+						<option value="WD3P_S1">Weekly Diamond Pass ML 3x (Rp. 89.000)</option>
+						<option value="WDP4_S1">Weekly Diamond Pass ML 4x (Rp. 118.000)</option>
+						<option value="WDP5_S1">Weekly Diamond Pass ML 5x (Rp. 147.500)</option>
+						<option value="ML5_S1">Diamond ML: 5 Diamonds (Rp. 2.000)</option>
+						<option value="ML12_S1">Diamond ML: 12 Diamonds (Rp. 4.000)</option>
+						<option value="ML19_S1">Diamond ML: 19 Diamonds (Rp. 6.000)</option>
+						<option value="ML28_S1">Diamond ML: 28 Diamonds (Rp. 8.500)</option>
+						<option value="ML44_S1">Diamond ML: 44 Diamonds (Rp. 13.000)</option>
+						<option value="ML59_S1">Diamond ML: 59 Diamonds (Rp. 17.000)</option>
+						<option value="ML85_S1">Diamond ML: 85 Diamonds (Rp. 23.000)</option>
+						<option value="ML114_S1">Diamond ML: 114 Diamonds (Rp. 32.000)</option>
+						<option value="ML170_S1">Diamond ML: 170 Diamonds (Rp. 45.000)</option>
+						<option value="ML240_S1">Diamond ML: 240 Diamonds (Rp. 65.000)</option>
+						<option value="ML296_S1">Diamond ML: 296 Diamonds (Rp. 80.000)</option>
+						<option value="ML408_S1">Diamond ML: 408 Diamonds (Rp. 110.000)</option>
+						<option value="ML568_S1">Diamond ML: 568 Diamonds (Rp. 150.000)</option>
+						<option value="ML875_S1">Diamond ML: 875 Diamonds (Rp. 228.000)</option>
+						<option value="ML2010_S1">Diamond ML: 2010 Diamonds (Rp. 485.000)</option>
+						<option value="ML4830_S1">Diamond ML: 4830 Diamonds (Rp. 1.180.000)</option>
 					</select>
 					</label>
 				</div>
 
-				<div class="inline">
+				<div class="bgform">
 					<label for="payment">
-						Pilih metode pembayaran:
-						<select id="payment">
-							<option value="qris">qris</option>
-							<option value="ovo">ovo</option>
+						<h2 class="minmg1">④ Pilih Metode Pembayaran:</h2>
+						<select class="mg15" id="payment">
+							<option> </option>
+							<option value="Dana">Dana</option>
+							<option value="Shopee Pay">Shopee Pay</option>
+							<option value="Gopay">Gopay</option>
+							<option value="Qris">Qris</option>
+							<option value="Bank BCA">Bank BCA</option>
+							<option value="Bank JAGO">Bank JAGO</option>
 						</select>
 				</div>
 
@@ -158,12 +202,16 @@
 
 			</form>
 		</div>
-			<button id="conf" onclick= "confirm()">konfirmasi pembayaran</button>
-			<button id="consol" onclick="consool()">console</button>
-		<footer class="footer">
-			yahaha hayyuk
-		</footer>
+			<h1 class="uh1">PASTIKAN DATA YANG DIISI SUDAH BENAR SEBELUM MENGKLIK "BELI !!!"</h1>
+			<h2>Setelah mengklik tombol "BELI !!!" Anda akan dialihkan ke whatsapp admin hokagestore, kemudian kirim pesan yang telah terisi secara otomatis untuk melanjutkan proses pembayaran.</h2>
+			<button class="button mgt15 " id="conf" onclick= "confirm()">BELI !!!</button>
+			<div id="alert"></div>
+			<footer class="bgform">
+				<h1 class="uh1">SOCIAL MEDIA</h1>
+				<h2>WHATSAPP: <a href="https://wa.me/6285692979765">085692979765</a></h2>
+				<h2 class="ig">INSTAGRAM: <a href="https://www.instagram.com/hokagestore.id/">@hokagestore.id</a></h2>
 
+			</footer>
 		<script>
 			let uid = document.getElementById("uid");
 			let sid = document.getElementById("sid");
@@ -171,12 +219,15 @@
 			let order = document.getElementById("order")
 			let payment = document.getElementById("payment");
 			let conf = document.getElementById("conf");
+			let alert = document.getElementById("alert")
+			//let clog = document.getElementById("clog")
 
-			let consol = document.getElementById("consol")
-			
-			function consool(){
+			function cnsl(){
 				console.log(uid.value)
 				console.log(sid.value)
+				console.log(nn.value)
+				console.log(order.value)
+				console.log(payment.value)
 			}
 			function confirm() {
 				let Iuid = uid.value
@@ -184,12 +235,15 @@
 				let Inn = nn.value
 				let Iorder = order.value
 				let Ipayment = payment.value
-				var link = location.href="https://wa.me/6285692979765/?text=%F0%9F%92%8E%20*TOPUP%20MOBILE%20LEGENDS*%20%F0%9F%92%8E%0A%0AUser ID:"+Iuid+"%0AServer ID:"+Isid+"%0ANickname:"+Inn+"%0APilihan Order:"+ Iorder+"%0APilihan metode pembayaran:"+ Ipayment
-				console.log(link)
+				
+				
+				if (Iuid != "" && Isid != "" && Inn != "" && Iorder != "" && Ipayment != "") {
+					var link = location.href="https://wa.me/6285692979765/?text=%F0%9F%92%8E%20*TOPUP%20MOBILE%20LEGENDS*%20%F0%9F%92%8E%0A%0AUser ID:"+Iuid+"%0AServer ID:"+Isid+"%0ANickname:"+Inn+"%0APilihan Order:"+ Iorder+"%0APilihan metode pembayaran:"+ Ipayment
+				}
+				else {
+					alert.innerHTML = "Masukkan data dengan benar!"
+				}
 			}
-		</script>
-	</body>
-</html>
 		</script>
 	</body>
 </html>
